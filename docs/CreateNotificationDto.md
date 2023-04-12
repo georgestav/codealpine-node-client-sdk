@@ -1,7 +1,6 @@
 # Codealpine.CreateNotificationDto
 
 ## Properties
-
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **Number** |  | 
@@ -9,5 +8,3 @@ Name | Type | Description | Notes
 **message** | **String** |  | 
 **level** | **Number** |  | 
 **created** | **Number** |  | 
-
-

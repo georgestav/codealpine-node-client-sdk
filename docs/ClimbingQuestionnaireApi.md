@@ -10,21 +10,19 @@ Method | HTTP request | Description
 [**climbingQuestionnaireControllerGetAnalysisMessage**](ClimbingQuestionnaireApi.md#climbingQuestionnaireControllerGetAnalysisMessage) | **POST** /api/v1/climbing-questionnaire/analysis/{questionnaire} | 
 [**climbingQuestionnaireControllerSaveUserQuestionnaire**](ClimbingQuestionnaireApi.md#climbingQuestionnaireControllerSaveUserQuestionnaire) | **POST** /api/v1/climbing-questionnaire/save-answers | 
 
-
-
-## climbingQuestionnaireControllerFindAll
-
+<a name="climbingQuestionnaireControllerFindAll"></a>
+# **climbingQuestionnaireControllerFindAll**
 > [ClimbingQuestionnaire] climbingQuestionnaireControllerFindAll(withQuestions)
 
 
 
 ### Example
-
 ```javascript
-import Codealpine from 'codealpine';
+import {Codealpine} from 'codealpine';
 
 let apiInstance = new Codealpine.ClimbingQuestionnaireApi();
 let withQuestions = "withQuestions_example"; // String | 
+
 apiInstance.climbingQuestionnaireControllerFindAll(withQuestions, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -35,7 +33,6 @@ apiInstance.climbingQuestionnaireControllerFindAll(withQuestions, (error, data, 
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -51,23 +48,22 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-
-## climbingQuestionnaireControllerFindForUser
-
+<a name="climbingQuestionnaireControllerFindForUser"></a>
+# **climbingQuestionnaireControllerFindForUser**
 > [ClimbingQuestionnaire] climbingQuestionnaireControllerFindForUser(authorization)
 
 
 
 ### Example
-
 ```javascript
-import Codealpine from 'codealpine';
+import {Codealpine} from 'codealpine';
 
 let apiInstance = new Codealpine.ClimbingQuestionnaireApi();
 let authorization = "authorization_example"; // String | 
+
 apiInstance.climbingQuestionnaireControllerFindForUser(authorization, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -78,7 +74,6 @@ apiInstance.climbingQuestionnaireControllerFindForUser(authorization, (error, da
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -94,24 +89,23 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-
-## climbingQuestionnaireControllerFindOne
-
+<a name="climbingQuestionnaireControllerFindOne"></a>
+# **climbingQuestionnaireControllerFindOne**
 > ClimbingQuestionnaire climbingQuestionnaireControllerFindOne(id, withQuestions)
 
 
 
 ### Example
-
 ```javascript
-import Codealpine from 'codealpine';
+import {Codealpine} from 'codealpine';
 
 let apiInstance = new Codealpine.ClimbingQuestionnaireApi();
 let id = "id_example"; // String | 
 let withQuestions = "withQuestions_example"; // String | 
+
 apiInstance.climbingQuestionnaireControllerFindOne(id, withQuestions, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -122,7 +116,6 @@ apiInstance.climbingQuestionnaireControllerFindOne(id, withQuestions, (error, da
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -139,23 +132,22 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-
-## climbingQuestionnaireControllerGetAnalysisMessage
-
+<a name="climbingQuestionnaireControllerGetAnalysisMessage"></a>
+# **climbingQuestionnaireControllerGetAnalysisMessage**
 > climbingQuestionnaireControllerGetAnalysisMessage(questionnaire)
 
 
 
 ### Example
-
 ```javascript
-import Codealpine from 'codealpine';
+import {Codealpine} from 'codealpine';
 
 let apiInstance = new Codealpine.ClimbingQuestionnaireApi();
-let questionnaire = 3.4; // Number | 
+let questionnaire = 1.2; // Number | 
+
 apiInstance.climbingQuestionnaireControllerGetAnalysisMessage(questionnaire, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -166,7 +158,6 @@ apiInstance.climbingQuestionnaireControllerGetAnalysisMessage(questionnaire, (er
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -182,23 +173,22 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: Not defined
+ - **Content-Type**: Not defined
+ - **Accept**: Not defined
 
-
-## climbingQuestionnaireControllerSaveUserQuestionnaire
-
+<a name="climbingQuestionnaireControllerSaveUserQuestionnaire"></a>
+# **climbingQuestionnaireControllerSaveUserQuestionnaire**
 > climbingQuestionnaireControllerSaveUserQuestionnaire(authorization)
 
 
 
 ### Example
-
 ```javascript
-import Codealpine from 'codealpine';
+import {Codealpine} from 'codealpine';
 
 let apiInstance = new Codealpine.ClimbingQuestionnaireApi();
 let authorization = "authorization_example"; // String | 
+
 apiInstance.climbingQuestionnaireControllerSaveUserQuestionnaire(authorization, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -209,7 +199,6 @@ apiInstance.climbingQuestionnaireControllerSaveUserQuestionnaire(authorization, 
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -225,6 +214,6 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: Not defined
+ - **Content-Type**: Not defined
+ - **Accept**: Not defined
 

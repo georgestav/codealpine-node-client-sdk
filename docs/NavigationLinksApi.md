@@ -10,22 +10,20 @@ Method | HTTP request | Description
 [**navlinksControllerV1Remove**](NavigationLinksApi.md#navlinksControllerV1Remove) | **DELETE** /api/v1/navlinks/{id} | 
 [**navlinksControllerV1Update**](NavigationLinksApi.md#navlinksControllerV1Update) | **PATCH** /api/v1/navlinks/{id} | 
 
-
-
-## navlinksControllerV1Create
-
-> navlinksControllerV1Create(createNavlinkDto)
+<a name="navlinksControllerV1Create"></a>
+# **navlinksControllerV1Create**
+> navlinksControllerV1Create(body)
 
 
 
 ### Example
-
 ```javascript
-import Codealpine from 'codealpine';
+import {Codealpine} from 'codealpine';
 
 let apiInstance = new Codealpine.NavigationLinksApi();
-let createNavlinkDto = new Codealpine.CreateNavlinkDto(); // CreateNavlinkDto | 
-apiInstance.navlinksControllerV1Create(createNavlinkDto, (error, data, response) => {
+let body = new Codealpine.CreateNavlinkDto(); // CreateNavlinkDto | 
+
+apiInstance.navlinksControllerV1Create(body, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -36,10 +34,9 @@ apiInstance.navlinksControllerV1Create(createNavlinkDto, (error, data, response)
 
 ### Parameters
 
-
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **createNavlinkDto** | [**CreateNavlinkDto**](CreateNavlinkDto.md)|  | 
+ **body** | [**CreateNavlinkDto**](CreateNavlinkDto.md)|  | 
 
 ### Return type
 
@@ -51,20 +48,18 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: Not defined
+ - **Content-Type**: application/json
+ - **Accept**: Not defined
 
-
-## navlinksControllerV1FindAll
-
+<a name="navlinksControllerV1FindAll"></a>
+# **navlinksControllerV1FindAll**
 > navlinksControllerV1FindAll()
 
 
 
 ### Example
-
 ```javascript
-import Codealpine from 'codealpine';
+import {Codealpine} from 'codealpine';
 
 let apiInstance = new Codealpine.NavigationLinksApi();
 apiInstance.navlinksControllerV1FindAll((error, data, response) => {
@@ -77,7 +72,6 @@ apiInstance.navlinksControllerV1FindAll((error, data, response) => {
 ```
 
 ### Parameters
-
 This endpoint does not need any parameter.
 
 ### Return type
@@ -90,23 +84,22 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: Not defined
+ - **Content-Type**: Not defined
+ - **Accept**: Not defined
 
-
-## navlinksControllerV1FindOne
-
+<a name="navlinksControllerV1FindOne"></a>
+# **navlinksControllerV1FindOne**
 > navlinksControllerV1FindOne(id)
 
 
 
 ### Example
-
 ```javascript
-import Codealpine from 'codealpine';
+import {Codealpine} from 'codealpine';
 
 let apiInstance = new Codealpine.NavigationLinksApi();
 let id = "id_example"; // String | 
+
 apiInstance.navlinksControllerV1FindOne(id, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -118,7 +111,6 @@ apiInstance.navlinksControllerV1FindOne(id, (error, data, response) => {
 
 ### Parameters
 
-
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **String**|  | 
@@ -133,23 +125,22 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: Not defined
+ - **Content-Type**: Not defined
+ - **Accept**: Not defined
 
-
-## navlinksControllerV1Remove
-
+<a name="navlinksControllerV1Remove"></a>
+# **navlinksControllerV1Remove**
 > navlinksControllerV1Remove(id)
 
 
 
 ### Example
-
 ```javascript
-import Codealpine from 'codealpine';
+import {Codealpine} from 'codealpine';
 
 let apiInstance = new Codealpine.NavigationLinksApi();
 let id = "id_example"; // String | 
+
 apiInstance.navlinksControllerV1Remove(id, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -161,7 +152,6 @@ apiInstance.navlinksControllerV1Remove(id, (error, data, response) => {
 
 ### Parameters
 
-
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **String**|  | 
@@ -176,25 +166,24 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: Not defined
+ - **Content-Type**: Not defined
+ - **Accept**: Not defined
 
-
-## navlinksControllerV1Update
-
-> navlinksControllerV1Update(id, updateNavlinkDto)
+<a name="navlinksControllerV1Update"></a>
+# **navlinksControllerV1Update**
+> navlinksControllerV1Update(body, id)
 
 
 
 ### Example
-
 ```javascript
-import Codealpine from 'codealpine';
+import {Codealpine} from 'codealpine';
 
 let apiInstance = new Codealpine.NavigationLinksApi();
+let body = new Codealpine.UpdateNavlinkDto(); // UpdateNavlinkDto | 
 let id = "id_example"; // String | 
-let updateNavlinkDto = new Codealpine.UpdateNavlinkDto(); // UpdateNavlinkDto | 
-apiInstance.navlinksControllerV1Update(id, updateNavlinkDto, (error, data, response) => {
+
+apiInstance.navlinksControllerV1Update(body, id, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -205,11 +194,10 @@ apiInstance.navlinksControllerV1Update(id, updateNavlinkDto, (error, data, respo
 
 ### Parameters
 
-
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **body** | [**UpdateNavlinkDto**](UpdateNavlinkDto.md)|  | 
  **id** | **String**|  | 
- **updateNavlinkDto** | [**UpdateNavlinkDto**](UpdateNavlinkDto.md)|  | 
 
 ### Return type
 
@@ -221,6 +209,6 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: Not defined
+ - **Content-Type**: application/json
+ - **Accept**: Not defined
 

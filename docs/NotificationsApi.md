@@ -10,22 +10,20 @@ Method | HTTP request | Description
 [**notificationControllerRemove**](NotificationsApi.md#notificationControllerRemove) | **DELETE** /api/v1/notification/{id} | 
 [**notificationControllerUpdate**](NotificationsApi.md#notificationControllerUpdate) | **PATCH** /api/v1/notification/{id} | 
 
-
-
-## notificationControllerCreate
-
-> Object notificationControllerCreate(createNotificationDto)
+<a name="notificationControllerCreate"></a>
+# **notificationControllerCreate**
+> Object notificationControllerCreate(body)
 
 
 
 ### Example
-
 ```javascript
-import Codealpine from 'codealpine';
+import {Codealpine} from 'codealpine';
 
 let apiInstance = new Codealpine.NotificationsApi();
-let createNotificationDto = new Codealpine.CreateNotificationDto(); // CreateNotificationDto | 
-apiInstance.notificationControllerCreate(createNotificationDto, (error, data, response) => {
+let body = new Codealpine.CreateNotificationDto(); // CreateNotificationDto | 
+
+apiInstance.notificationControllerCreate(body, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -36,10 +34,9 @@ apiInstance.notificationControllerCreate(createNotificationDto, (error, data, re
 
 ### Parameters
 
-
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **createNotificationDto** | [**CreateNotificationDto**](CreateNotificationDto.md)|  | 
+ **body** | [**CreateNotificationDto**](CreateNotificationDto.md)|  | 
 
 ### Return type
 
@@ -51,20 +48,18 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
-
-## notificationControllerFindAll
-
+<a name="notificationControllerFindAll"></a>
+# **notificationControllerFindAll**
 > [Notification] notificationControllerFindAll()
 
 
 
 ### Example
-
 ```javascript
-import Codealpine from 'codealpine';
+import {Codealpine} from 'codealpine';
 
 let apiInstance = new Codealpine.NotificationsApi();
 apiInstance.notificationControllerFindAll((error, data, response) => {
@@ -77,7 +72,6 @@ apiInstance.notificationControllerFindAll((error, data, response) => {
 ```
 
 ### Parameters
-
 This endpoint does not need any parameter.
 
 ### Return type
@@ -90,23 +84,22 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-
-## notificationControllerFindOne
-
-> String notificationControllerFindOne(id)
+<a name="notificationControllerFindOne"></a>
+# **notificationControllerFindOne**
+> &#x27;String&#x27; notificationControllerFindOne(id)
 
 
 
 ### Example
-
 ```javascript
-import Codealpine from 'codealpine';
+import {Codealpine} from 'codealpine';
 
 let apiInstance = new Codealpine.NotificationsApi();
 let id = "id_example"; // String | 
+
 apiInstance.notificationControllerFindOne(id, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -118,14 +111,13 @@ apiInstance.notificationControllerFindOne(id, (error, data, response) => {
 
 ### Parameters
 
-
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **String**|  | 
 
 ### Return type
 
-**String**
+**&#x27;String&#x27;**
 
 ### Authorization
 
@@ -133,23 +125,22 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-
-## notificationControllerRemove
-
-> String notificationControllerRemove(id)
+<a name="notificationControllerRemove"></a>
+# **notificationControllerRemove**
+> &#x27;String&#x27; notificationControllerRemove(id)
 
 
 
 ### Example
-
 ```javascript
-import Codealpine from 'codealpine';
+import {Codealpine} from 'codealpine';
 
 let apiInstance = new Codealpine.NotificationsApi();
 let id = "id_example"; // String | 
+
 apiInstance.notificationControllerRemove(id, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -161,14 +152,13 @@ apiInstance.notificationControllerRemove(id, (error, data, response) => {
 
 ### Parameters
 
-
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **String**|  | 
 
 ### Return type
 
-**String**
+**&#x27;String&#x27;**
 
 ### Authorization
 
@@ -176,25 +166,24 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-
-## notificationControllerUpdate
-
-> String notificationControllerUpdate(id, updateNotificationDto)
+<a name="notificationControllerUpdate"></a>
+# **notificationControllerUpdate**
+> &#x27;String&#x27; notificationControllerUpdate(body, id)
 
 
 
 ### Example
-
 ```javascript
-import Codealpine from 'codealpine';
+import {Codealpine} from 'codealpine';
 
 let apiInstance = new Codealpine.NotificationsApi();
+let body = new Codealpine.UpdateNotificationDto(); // UpdateNotificationDto | 
 let id = "id_example"; // String | 
-let updateNotificationDto = new Codealpine.UpdateNotificationDto(); // UpdateNotificationDto | 
-apiInstance.notificationControllerUpdate(id, updateNotificationDto, (error, data, response) => {
+
+apiInstance.notificationControllerUpdate(body, id, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -205,15 +194,14 @@ apiInstance.notificationControllerUpdate(id, updateNotificationDto, (error, data
 
 ### Parameters
 
-
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **body** | [**UpdateNotificationDto**](UpdateNotificationDto.md)|  | 
  **id** | **String**|  | 
- **updateNotificationDto** | [**UpdateNotificationDto**](UpdateNotificationDto.md)|  | 
 
 ### Return type
 
-**String**
+**&#x27;String&#x27;**
 
 ### Authorization
 
@@ -221,6 +209,6 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 

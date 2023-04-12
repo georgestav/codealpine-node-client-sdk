@@ -1,7 +1,6 @@
 # Codealpine.ClimbingQuestionnaireAnalysis
 
 ## Properties
-
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **Number** |  | 
@@ -10,5 +9,3 @@ Name | Type | Description | Notes
 **maxValue** | **Number** |  | 
 **questionnaire** | [**ClimbingQuestionnaire**](ClimbingQuestionnaire.md) |  | 
 **userResponse** | [**ClimbingQuestionnaireUser**](ClimbingQuestionnaireUser.md) |  | 
-
-

@@ -1,7 +1,6 @@
 # Codealpine.UpdateNotificationDto
 
 ## Properties
-
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **Number** |  | [optional] 
@@ -9,5 +8,3 @@ Name | Type | Description | Notes
 **message** | **String** |  | [optional] 
 **level** | **Number** |  | [optional] 
 **created** | **Number** |  | [optional] 
-
-

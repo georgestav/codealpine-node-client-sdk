@@ -1,7 +1,6 @@
 # Codealpine.ClimbingQuestionnaire
 
 ## Properties
-
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **Number** |  | 
@@ -9,8 +8,6 @@ Name | Type | Description | Notes
 **title** | **String** |  | 
 **description** | **String** |  | 
 **accessRequired** | **String** |  | 
-**climbingQuestion** | [**[ClimbingQuestion]**](ClimbingQuestion.md) |  | 
-**analysis** | [**[ClimbingQuestionnaireAnalysis]**](ClimbingQuestionnaireAnalysis.md) |  | 
-**userResponses** | [**[ClimbingQuestionnaireUser]**](ClimbingQuestionnaireUser.md) |  | 
-
-
+**climbingQuestion** | [**ClimbingQuestion**](ClimbingQuestion.md) |  | 
+**analysis** | [**ClimbingQuestionnaireAnalysis**](ClimbingQuestionnaireAnalysis.md) |  | 
+**userResponses** | [**ClimbingQuestionnaireUser**](ClimbingQuestionnaireUser.md) |  | 

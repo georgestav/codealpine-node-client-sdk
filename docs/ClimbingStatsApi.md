@@ -7,21 +7,19 @@ Method | HTTP request | Description
 [**climbingStatsControllerGetUserProfile**](ClimbingStatsApi.md#climbingStatsControllerGetUserProfile) | **GET** /api/v1/climbing-stats/user/assessment | 
 [**climbingStatsControllerGetUserStats**](ClimbingStatsApi.md#climbingStatsControllerGetUserStats) | **POST** /api/v1/climbing-stats/user | 
 
-
-
-## climbingStatsControllerGetUserProfile
-
+<a name="climbingStatsControllerGetUserProfile"></a>
+# **climbingStatsControllerGetUserProfile**
 > [Object] climbingStatsControllerGetUserProfile(authorization)
 
 
 
 ### Example
-
 ```javascript
-import Codealpine from 'codealpine';
+import {Codealpine} from 'codealpine';
 
 let apiInstance = new Codealpine.ClimbingStatsApi();
 let authorization = "authorization_example"; // String | 
+
 apiInstance.climbingStatsControllerGetUserProfile(authorization, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -32,7 +30,6 @@ apiInstance.climbingStatsControllerGetUserProfile(authorization, (error, data, r
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -48,23 +45,22 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
-
-## climbingStatsControllerGetUserStats
-
+<a name="climbingStatsControllerGetUserStats"></a>
+# **climbingStatsControllerGetUserStats**
 > Object climbingStatsControllerGetUserStats(authorization)
 
 
 
 ### Example
-
 ```javascript
-import Codealpine from 'codealpine';
+import {Codealpine} from 'codealpine';
 
 let apiInstance = new Codealpine.ClimbingStatsApi();
 let authorization = "authorization_example"; // String | 
+
 apiInstance.climbingStatsControllerGetUserStats(authorization, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -75,7 +71,6 @@ apiInstance.climbingStatsControllerGetUserStats(authorization, (error, data, res
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -91,6 +86,6 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 

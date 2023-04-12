@@ -6,18 +6,15 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**appControllerGetInfo**](DefaultApi.md#appControllerGetInfo) | **GET** /api | 
 
-
-
-## appControllerGetInfo
-
+<a name="appControllerGetInfo"></a>
+# **appControllerGetInfo**
 > appControllerGetInfo()
 
 
 
 ### Example
-
 ```javascript
-import Codealpine from 'codealpine';
+import {Codealpine} from 'codealpine';
 
 let apiInstance = new Codealpine.DefaultApi();
 apiInstance.appControllerGetInfo((error, data, response) => {
@@ -30,7 +27,6 @@ apiInstance.appControllerGetInfo((error, data, response) => {
 ```
 
 ### Parameters
-
 This endpoint does not need any parameter.
 
 ### Return type
@@ -43,6 +39,6 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: Not defined
+ - **Content-Type**: Not defined
+ - **Accept**: Not defined
 
