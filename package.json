@@ -3,7 +3,6 @@
   "version": "1.0.1",
   "description": "OpenAPI client for codealpine API",
   "author": "OpenAPI-Generator Contributors",
-  "private": true,
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -32,5 +31,8 @@
   },
   "devDependencies": {
     "typescript": "^3.9.3"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   }
 }
