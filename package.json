@@ -1,15 +1,23 @@
 {
-  "name": "",
-  "version": "0.0.1",
-  "description": "OpenAPI client for ",
+  "name": "@georgestav/codealpine-node-client-sdk",
+  "version": "1.0.2",
+  "description": "OpenAPI client for codealpine API",
   "author": "OpenAPI-Generator Contributors",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://georgestav/codealpine-node-client-sdk.git"
+  },
+  "bugs": {
+    "url": "https://georgestav/codealpine-node-client-sdk/issues"
+  },
+  "homepage": "https://georgestav/codealpine-node-client-sdk#readme",
   "keywords": [
     "fetch",
     "typescript",
     "openapi-client",
     "openapi-generator"
   ],
-  "license": "Unlicense",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
   "scripts": {
@@ -23,5 +31,8 @@
   },
   "devDependencies": {
     "typescript": "^3.9.3"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   }
 }
