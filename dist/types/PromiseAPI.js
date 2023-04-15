@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.PromiseUsersApi = exports.PromiseNotificationsApi = exports.PromiseNavigationLinksApi = exports.PromiseDefaultApi = exports.PromiseClimbingStatsApi = exports.PromiseClimbingQuestionnaireApi = void 0;
+exports.PromiseNotificationsApi = exports.PromiseNavigationLinksApi = exports.PromiseDefaultApi = exports.PromiseClimbingStatsApi = exports.PromiseClimbingQuestionnaireApi = void 0;
 var ObservableAPI_1 = require("./ObservableAPI");
 var PromiseClimbingQuestionnaireApi = (function () {
     function PromiseClimbingQuestionnaireApi(configuration, requestFactory, responseProcessor) {
@@ -113,16 +113,4 @@ var PromiseNotificationsApi = (function () {
     return PromiseNotificationsApi;
 }());
 exports.PromiseNotificationsApi = PromiseNotificationsApi;
-var ObservableAPI_6 = require("./ObservableAPI");
-var PromiseUsersApi = (function () {
-    function PromiseUsersApi(configuration, requestFactory, responseProcessor) {
-        this.api = new ObservableAPI_6.ObservableUsersApi(configuration, requestFactory, responseProcessor);
-    }
-    PromiseUsersApi.prototype.userControllerUpdate = function (id, body, options) {
-        var result = this.api.userControllerUpdate(id, body, options);
-        return result.toPromise();
-    };
-    return PromiseUsersApi;
-}());
-exports.PromiseUsersApi = PromiseUsersApi;
 //# sourceMappingURL=PromiseAPI.js.map

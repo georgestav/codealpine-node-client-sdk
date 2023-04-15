@@ -1,12 +1,10 @@
 .gitignore
-.openapi-generator-ignore
 README.md
 apis/ClimbingQuestionnaireApi.ts
 apis/ClimbingStatsApi.ts
 apis/DefaultApi.ts
 apis/NavigationLinksApi.ts
 apis/NotificationsApi.ts
-apis/UsersApi.ts
 apis/baseapi.ts
 apis/exception.ts
 auth/auth.ts

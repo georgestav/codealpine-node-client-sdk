@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ObservableUsersApi = exports.ObservableNotificationsApi = exports.ObservableNavigationLinksApi = exports.ObservableDefaultApi = exports.ObservableClimbingStatsApi = exports.ObservableClimbingQuestionnaireApi = void 0;
+exports.ObservableNotificationsApi = exports.ObservableNavigationLinksApi = exports.ObservableDefaultApi = exports.ObservableClimbingStatsApi = exports.ObservableClimbingQuestionnaireApi = void 0;
 var rxjsStub_1 = require("../rxjsStub");
 var rxjsStub_2 = require("../rxjsStub");
 var ClimbingQuestionnaireApi_1 = require("../apis/ClimbingQuestionnaireApi");
@@ -485,38 +485,4 @@ var ObservableNotificationsApi = (function () {
     return ObservableNotificationsApi;
 }());
 exports.ObservableNotificationsApi = ObservableNotificationsApi;
-var UsersApi_1 = require("../apis/UsersApi");
-var ObservableUsersApi = (function () {
-    function ObservableUsersApi(configuration, requestFactory, responseProcessor) {
-        this.configuration = configuration;
-        this.requestFactory = requestFactory || new UsersApi_1.UsersApiRequestFactory(configuration);
-        this.responseProcessor = responseProcessor || new UsersApi_1.UsersApiResponseProcessor();
-    }
-    ObservableUsersApi.prototype.userControllerUpdate = function (id, body, options) {
-        var _this = this;
-        var requestContextPromise = this.requestFactory.userControllerUpdate(id, body, options);
-        var middlewarePreObservable = rxjsStub_1.from(requestContextPromise);
-        var _loop_37 = function (middleware) {
-            middlewarePreObservable = middlewarePreObservable.pipe(rxjsStub_2.mergeMap(function (ctx) { return middleware.pre(ctx); }));
-        };
-        for (var _i = 0, _a = this.configuration.middleware; _i < _a.length; _i++) {
-            var middleware = _a[_i];
-            _loop_37(middleware);
-        }
-        return middlewarePreObservable.pipe(rxjsStub_2.mergeMap(function (ctx) { return _this.configuration.httpApi.send(ctx); })).
-            pipe(rxjsStub_2.mergeMap(function (response) {
-            var middlewarePostObservable = rxjsStub_1.of(response);
-            var _loop_38 = function (middleware) {
-                middlewarePostObservable = middlewarePostObservable.pipe(rxjsStub_2.mergeMap(function (rsp) { return middleware.post(rsp); }));
-            };
-            for (var _i = 0, _a = _this.configuration.middleware; _i < _a.length; _i++) {
-                var middleware = _a[_i];
-                _loop_38(middleware);
-            }
-            return middlewarePostObservable.pipe(rxjsStub_2.map(function (rsp) { return _this.responseProcessor.userControllerUpdate(rsp); }));
-        }));
-    };
-    return ObservableUsersApi;
-}());
-exports.ObservableUsersApi = ObservableUsersApi;
 //# sourceMappingURL=ObservableAPI.js.map

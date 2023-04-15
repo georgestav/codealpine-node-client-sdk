@@ -59,11 +59,3 @@ export declare class ObservableNotificationsApi {
     notificationControllerRemove(id: string, options?: Configuration): Observable<string>;
     notificationControllerUpdate(id: string, updateNotificationDto: UpdateNotificationDto, options?: Configuration): Observable<string>;
 }
-import { UsersApiRequestFactory, UsersApiResponseProcessor } from "../apis/UsersApi";
-export declare class ObservableUsersApi {
-    private requestFactory;
-    private responseProcessor;
-    private configuration;
-    constructor(configuration: Configuration, requestFactory?: UsersApiRequestFactory, responseProcessor?: UsersApiResponseProcessor);
-    userControllerUpdate(id: string, body: any, options?: Configuration): Observable<string>;
-}

@@ -48,9 +48,3 @@ export declare class PromiseNotificationsApi {
     notificationControllerRemove(id: string, options?: Configuration): Promise<string>;
     notificationControllerUpdate(id: string, updateNotificationDto: UpdateNotificationDto, options?: Configuration): Promise<string>;
 }
-import { UsersApiRequestFactory, UsersApiResponseProcessor } from "../apis/UsersApi";
-export declare class PromiseUsersApi {
-    private api;
-    constructor(configuration: Configuration, requestFactory?: UsersApiRequestFactory, responseProcessor?: UsersApiResponseProcessor);
-    userControllerUpdate(id: string, body: any, options?: Configuration): Promise<string>;
-}

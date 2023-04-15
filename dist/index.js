@@ -23,5 +23,4 @@ Object.defineProperty(exports, "ClimbingStatsApi", { enumerable: true, get: func
 Object.defineProperty(exports, "DefaultApi", { enumerable: true, get: function () { return PromiseAPI_1.PromiseDefaultApi; } });
 Object.defineProperty(exports, "NavigationLinksApi", { enumerable: true, get: function () { return PromiseAPI_1.PromiseNavigationLinksApi; } });
 Object.defineProperty(exports, "NotificationsApi", { enumerable: true, get: function () { return PromiseAPI_1.PromiseNotificationsApi; } });
-Object.defineProperty(exports, "UsersApi", { enumerable: true, get: function () { return PromiseAPI_1.PromiseUsersApi; } });
 //# sourceMappingURL=index.js.map

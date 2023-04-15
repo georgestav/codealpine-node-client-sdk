@@ -102,13 +102,3 @@ export declare class ObjectNotificationsApi {
     notificationControllerRemove(param: NotificationsApiNotificationControllerRemoveRequest, options?: Configuration): Promise<string>;
     notificationControllerUpdate(param: NotificationsApiNotificationControllerUpdateRequest, options?: Configuration): Promise<string>;
 }
-import { UsersApiRequestFactory, UsersApiResponseProcessor } from "../apis/UsersApi";
-export interface UsersApiUserControllerUpdateRequest {
-    id: string;
-    body: any;
-}
-export declare class ObjectUsersApi {
-    private api;
-    constructor(configuration: Configuration, requestFactory?: UsersApiRequestFactory, responseProcessor?: UsersApiResponseProcessor);
-    userControllerUpdate(param: UsersApiUserControllerUpdateRequest, options?: Configuration): Promise<string>;
-}

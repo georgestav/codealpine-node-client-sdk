@@ -256,32 +256,3 @@ export class PromiseNotificationsApi {
 
 
 
-import { ObservableUsersApi } from './ObservableAPI';
-
-
-import { UsersApiRequestFactory, UsersApiResponseProcessor} from "../apis/UsersApi";
-export class PromiseUsersApi {
-    private api: ObservableUsersApi
-
-    public constructor(
-        configuration: Configuration,
-        requestFactory?: UsersApiRequestFactory,
-        responseProcessor?: UsersApiResponseProcessor
-    ) {
-        this.api = new ObservableUsersApi(configuration, requestFactory, responseProcessor);
-    }
-
-    /**
-     * @param id 
-     * @param body 
-     */
-    public userControllerUpdate(id: string, body: any, options?: Configuration): Promise<string> {
-    	const result = this.api.userControllerUpdate(id, body, options);
-        return result.toPromise();
-    }
-	
-
-}
-
-
-
