@@ -1,6 +1,6 @@
 {
   "name": "@georgestav/codealpine-node-client-sdk",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "OpenAPI client for codealpine API",
   "author": "OpenAPI-Generator Contributors",
   "license": "MIT",
